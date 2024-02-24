@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="8dp"
+    android:background="#83000000">
+
+    <LinearLayout
+        android:layout_width="402dp"
+        android:layout_height="733dp"
+        android:background="#FFFFFF"
+        android:minWidth="800px"
+        android:minHeight="1000px"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-9dp">
+
+        <!-- Add your popup content here -->
+
+        <TextView
+            android:id="@+id/popupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:paddingBottom="10px"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/popupImage"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_weight="1"
+            android:padding="10px"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/popupQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:padding="10px"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/popupDesc"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:gravity="center|top"
+            android:padding="10px"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Close" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
